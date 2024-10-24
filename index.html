@@ -1,5 +1,378 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenZ Fashion</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <style>
+          .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+.container {width: 980px !important;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ff69b4;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #333;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 2rem;
+        }
+
+        /* About Us Button */
+        .about-us {
+            background-color: #ff69b4;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            margin: 2rem 0;
+            display: block;
+            width: 200px;
+        }
+
+        .about-us:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Images */
+        .hero-images img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+
+        /* Products Section */
+        .products-section {
+            display: flex;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .men-section, .women-section {
+            flex: 1;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .product-card {
+            border: 5px solid #ff69b4;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .price {
+            color: #ff69b4;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        /* Special Offers */
+        .special-offers {
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .special-offers h2 {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        /* Trending Accessories */
+        .trending {
+            margin: 3rem 0;
+        }
+
+        .trending h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .accessories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .accessory-card {
+            border: 3px solid #ff69b4;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .accessory-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* Address Section */
+        .address-section {
+            background-color: #ff69b4;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* YouTube Video Section */
+        .video-section {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
 <body>
-<h1>Dishu<h1>
+    <nav>
+        <div class="logo">
+            <!--  logo -->
+            <img src="logo2.jpg" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://alkite.files.wordpress.com/2009/05/surfing-1.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beatiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<form>
+    <input type=file >Upload a file</input>
+        <button class="about-us">Submit</button>
+</form>
+        <div class="image3.jpg">
+            <img src="image3.jpg" alt="Hero Image 1">
+            <img src="image4.jpg" alt="Hero Image 2">
+        </div>
+
+        <div class="products-section">
+            <div class="men-section">
+                <h2>Men's Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="men1.jpg" alt="Men's Product 1">
+                        <p class="price">$49.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="men2.jpg" alt="Men's Product 2">
+                        <p class="price">$29.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="men6.jpg" alt="Men's Product 3">
+                        <p class="price">$59.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="men3.jpg" alt="Men's Product 4">
+                        <p class="price">$69.99</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="women-section">
+                <h2>Women's Collection</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="women2.jpg" alt="Women's Product 1">
+                        <p class="price">$99.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="women3.jpg" alt="Women's Product 2">
+                        <p class="price">$89.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="women7.jpg" alt="Women's Product 3">
+                        <p class="price">$79.99</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="women5.jpg" alt="Women's Product 4">
+                        <p class="price">$69.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="special-offers">
+            <h2>Special Offers</h2>
+            <p>Experience the ultimate fashion revolution with our exclusive collection. 45% {discount}.Discover unique styles that define the GenZ generation. From streetwear to haute couture, we bring you the perfect blend of comfort and style. Shop now and express yourself through our carefully curated selection of trendsetting pieces.</p>
+        </div>
+
+        <div class="trending">
+            <h2>Trending Accessories</h2>
+            <div class="accessories-grid">
+                <div class="accessory-card">
+                    <img src="as2.png" alt="Accessory 1">
+                    <p class="price">$29.99</p>
+                </div>
+                <div class="accessory-card">
+                    <img src="as8.jpg" alt="Accessory 2">
+                    <p class="price">$39.99</p>
+                </div>
+                <div class="accessory-card">
+                    <img src="as2.jpg" alt="Accessory 3">
+                    <p class="price">$49.99</p>
+                </div>
+                <div class="accessory-card">
+                    <img src="/api/placeholder/300/250" alt="Accessory 4">
+                    <p class="price">$59.99</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="address-section">
+            <h3>Visit Our Store</h3>
+            <p>123 Fashion Street</p>
+            <p>Style District, ST 12345</p>
+            <p>Contact: (555) 123-4567</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GenZ Fashion. All rights reserved.</p>
+    </footer>
 </body>
 </html>
