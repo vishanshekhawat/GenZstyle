@@ -1,0 +1,193 @@
+    .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+.container {width: 980px !important;}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ff69b4;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #333;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            padding: 2rem;
+        }
+
+        /* About Us Button */
+        .about-us {
+            background-color: #ff69b4;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            margin: 2rem 0;
+            display: block;
+            width: 200px;
+        }
+
+        .about-us:hover {
+            transform: scale(1.1);
+        }
+
+        /* Hero Images */
+        .hero-images img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+
+        /* Products Section */
+        .products-section {
+            display: flex;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .men-section, .women-section {
+            flex: 1;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .product-card {
+            border: 5px solid #ff69b4;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .price {
+            color: #ff69b4;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        /* Special Offers */
+        .special-offers {
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .special-offers h2 {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        /* Trending Accessories */
+        .trending {
+            margin: 3rem 0;
+        }
+
+        .trending h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .accessories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .accessory-card {
+            border: 3px solid #ff69b4;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .accessory-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        /* Address Section */
+        .address-section {
+            background-color: #ff69b4;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        /* YouTube Video Section */
+        .video-section {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        iframe {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
